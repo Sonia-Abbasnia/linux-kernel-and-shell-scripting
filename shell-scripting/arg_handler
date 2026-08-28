@@ -1,0 +1,30 @@
+#!/bin/bash
+# Behavior depends on how many arguments are passed:
+#   1 arg  -> treat it as a filename and print its contents line by line
+#   2 args -> treat them as numbers and divide the second by the first
+#   3 args -> print the three arguments and save them to output.txt
+#
+# Usage: ./arg_handler.sh <file> | <num1> <num2> | <a> <b> <c>
+
+if [ $# -eq 1 ]; then
+    if [ -f "$1" ]; then
+        while IFS= read -r line; do
+            echo "$line"
+        done < "$1"
+    else
+        echo "File does not exist!"
+    fi
+elif [ $# -eq 2 ]; then
+    if [ "$1" -eq 0 ]; then
+        echo "Cannot divide by zero!"
+    else
+        result=$(( $2 / $1 ))
+        echo "$result"
+    fi
+elif [ $# -eq 3 ]; then
+    echo "Your inputs are: $1, $2 and $3"
+    echo "$1 $2 $3" > output.txt
+    echo "Arguments saved to output.txt"
+else
+    echo "Only up to 3 arguments are accepted!"
+fi
