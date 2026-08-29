@@ -154,5 +154,3 @@ uname -r
 # 6.1.144sonia.abbasnia.final
 ```
 
----
-*This write-up is translated and reorganized from the original build notes (kept in Persian). A couple of kernel-version references in the source notes were inconsistent (6.1.144 vs. 6.1.94) — standardized here on 6.1.144, since that's the version that actually ended up installed and booted. Worth a quick double-check against the original notes if that matters for your write-up.*
