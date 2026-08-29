@@ -1,6 +1,6 @@
 # Linux Kernel Compilation & Shell Scripting
 
-A small portfolio of hands-on Linux work: building a custom kernel from source on Ubuntu Server, and a set of Bash scripting exercises from a systems course.
+A small portfolio of hands-on Linux work: building a custom kernel from source on Ubuntu Server, and a set of Bash scripting exercises.
 
 ## Contents
 
@@ -12,5 +12,3 @@ A small portfolio of hands-on Linux work: building a custom kernel from source o
 - Ubuntu Server (VM)
 - Linux kernel 6.1.144, built from source ([kernel.org](https://kernel.org))
 
----
-*Originally documented in Persian while working through the build; translated and reorganized here for a wider audience.*
